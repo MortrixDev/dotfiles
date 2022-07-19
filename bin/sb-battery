@@ -1,0 +1,16 @@
+#!/bin/bash
+status=$(cat /sys/class/power_supply/BAT0/capacity)
+
+if   [ "$status" -lt "11" ]; then
+	icon=
+elif [ "$status" -lt "26" ]; then
+	icon=
+elif [ "$status" -lt "51" ]; then
+	icon=
+elif [ "$status" -lt "76" ]; then
+	icon=
+else
+	icon=
+fi
+
+echo "$icon ${status}%"
