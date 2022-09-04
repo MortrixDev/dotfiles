@@ -1,0 +1,11 @@
+super + e
+	firefox
+
+super + w
+	pcmanfm
+
+super + BackSpace
+	rofi -show drun
+
+control + super + BackSpace
+	rofi -show run
